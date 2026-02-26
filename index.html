@@ -183,6 +183,26 @@
     .meal-section { border-right: none; border-bottom: 1px solid #f0f0f0; }
     .meal-section:last-child { border-bottom: none; }
   }
+
+  .speak-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 0.72rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+  .speak-btn:hover { border-color: #1a5276; background: #eaf4fb; }
+  .speak-btn.speaking { border-color: #e67e22; background: #fef5e7; animation: pulse 1s infinite; }
+  @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
 </style>
 </head>
 <body>
@@ -1365,6 +1385,54 @@
     }
   }
 
+  function speakMeal(btn) {
+    if (speechSynthesis.speaking) {
+      speechSynthesis.cancel();
+      document.querySelectorAll('.speak-btn.speaking').forEach(b => {
+        b.classList.remove('speaking');
+        b.textContent = '🔊';
+      });
+      if (btn.dataset.wasSpeaking === 'true') return;
+    }
+
+    const section = btn.closest('.meal-section');
+    const type = section.querySelector('.meal-type').textContent.trim();
+    const items = [...section.querySelectorAll('.meal-items li')]
+      .map(li => li.textContent.trim()).join(', ');
+    const text = `${type}: ${items}`;
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'tr-TR';
+    utterance.rate = 1.1;
+
+    btn.classList.add('speaking');
+    btn.textContent = '⏹';
+    btn.dataset.wasSpeaking = 'false';
+
+    utterance.onend = () => {
+      btn.classList.remove('speaking');
+      btn.textContent = '🔊';
+    };
+
+    speechSynthesis.speak(utterance);
+    btn.dataset.wasSpeaking = 'true';
+    setTimeout(() => { btn.dataset.wasSpeaking = 'false'; }, 300);
+  }
+
+  function addSpeakButtons() {
+    document.querySelectorAll('#tab-mert .meal-section').forEach(section => {
+      const typeEl = section.querySelector('.meal-type');
+      const btn = document.createElement('button');
+      btn.className = 'speak-btn';
+      btn.textContent = '🔊';
+      btn.title = 'Sesli oku';
+      btn.setAttribute('aria-label', 'Sesli oku');
+      btn.onclick = () => speakMeal(btn);
+      typeEl.insertAdjacentElement('afterend', btn);
+    });
+  }
+
+  addSpeakButtons();
   highlightToday();
 </script>
 </body>
