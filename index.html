@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Şubat 2026 – Yemek Listesi</title>
+<title>Mart 2026 – Yemek Listesi</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { box-sizing: border-boxn; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f5f5; color: #333; }
 
   header {
@@ -166,6 +166,18 @@
   .cal { font-size: 0.7rem; color: #aaa; white-space: nowrap; }
   .allergen { font-size: 0.65rem; color: #c0392b; background: #fdf2f2; padding: 1px 4px; border-radius: 3px; white-space: nowrap; }
 
+  .tatil-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    padding: 20px 24px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
   .legend {
     background: white;
     margin: 0 20px 24px;
@@ -209,7 +221,7 @@
 
 <header>
   <div>
-    <h1>🍽️ Şubat 2026 Yemek Listesi</h1>
+    <h1>🍽️ Mart 2026 Yemek Listesi</h1>
     <p>İpek → Bahçeşehir Koleji &nbsp;|&nbsp; Mert → İlk Gelişim Anaokulu</p>
   </div>
 </header>
@@ -225,221 +237,53 @@
 
   <div class="week-nav">
     <span>Hafta:</span>
-    <button class="week-btn active" onclick="switchWeek('ipek', 1, this)">2–6 Şubat</button>
-    <button class="week-btn" onclick="switchWeek('ipek', 2, this)">9–13 Şubat</button>
-    <button class="week-btn" onclick="switchWeek('ipek', 3, this)">16–20 Şubat</button>
-    <button class="week-btn" onclick="switchWeek('ipek', 4, this)">23–27 Şubat</button>
+    <button class="week-btn active" onclick="switchWeek('ipek', 1, this)">2–6 Mart</button>
+    <button class="week-btn" onclick="switchWeek('ipek', 2, this)">9–13 Mart</button>
+    <button class="week-btn" onclick="switchWeek('ipek', 3, this)">16–20 Mart</button>
+    <button class="week-btn" onclick="switchWeek('ipek', 4, this)">23–27 Mart</button>
+    <button class="week-btn" onclick="switchWeek('ipek', 5, this)">30–31 Mart</button>
   </div>
 
   <!-- Hafta 1 -->
   <div id="ipek-week-1" class="week-grid active">
 
-    <div class="day-card" id="day-20260202">
+    <div class="day-card" id="day-20260302">
       <div class="day-header">
         <div class="day-name">Pazartesi</div>
-        <div class="day-date">2 Şubat</div>
+        <div class="day-date">2 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-kahvalti">Kahvaltı</div>
           <ul class="meal-items">
             <li>Bitki Çayı</li>
-            <li>Haşlanmış Yumurta</li>
-            <li>Beyaz Peynir – Zeytin</li>
-            <li>Reçel – Portakal Dilimi</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Şafak Çorba</li>
-            <li>Mantı</li>
-            <li>Karnabahar Kızartma</li>
-            <li>Yoğurt</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Kandil Simidi </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260203">
-      <div class="day-header">
-        <div class="day-name">Salı</div>
-        <div class="day-date">3 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Süt</li>
             <li>Açma</li>
-            <li>Kaşar Peynir – Zeytin</li>
-            <li>Bal – Salatalık Çubukları</li>
+            <li>Krem Peynir – Zeytin</li>
+            <li>Tahin Pekmez – Maydanoz Dereotu</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğle Yemeği</div>
           <ul class="meal-items">
-            <li>Hidiv Çorba</li>
-            <li>Lazanya</li>
-            <li>Domates Soslu Makarna</li>
-            <li>Portakallı Cheesecake</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Cupta Nar</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260204">
-      <div class="day-header">
-        <div class="day-name">Çarşamba</div>
-        <div class="day-date">4 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Portakal Suyu</li>
-            <li>Çırpılmış Yumurta</li>
-            <li>Lörlu Biber Kavurma – Zeytin</li>
-            <li>Tahin Pekmez – Havuç Çubukları</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Ezogelin Çorba</li>
-            <li>Kayseri Yalama </li>
-            <li>Zeytinyağlı Pirasa</li>
-            <li>Yoğurt</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Çheddar Peynirli Çup Sandwich</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260205">
-      <div class="day-header">
-        <div class="day-name">Perşembe</div>
-        <div class="day-date">5 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Süt</li>
-            <li>Poğaça</li>
-            <li>Üçgen Peynir – Zeytin</li>
-            <li>Reçel – Maydanoz &amp; Dereotu</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Minestrone Çorba</li>
-            <li>Kuru Fasulye</li>
-            <li>Pirinç Pilavı</li>
-            <li>Mevsim Meyve</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Portakallı Kek</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260206">
-      <div class="day-header">
-        <div class="day-name">Cuma</div>
-        <div class="day-date">6 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Sebzeli Omlet</li>
-            <li>Top Peynir – Zeytin</li>
-            <li>Bal – Havuç Çubukları</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Domates Çorba</li>
-            <li>Domatesli Bulgur Pilavı</li>
-            <li>Ayran</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Şeker Kurabiyesi</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /hafta1 -->
-
-  <!-- Hafta 2 -->
-  <div id="ipek-week-2" class="week-grid">
-
-    <div class="day-card" id="day-20260209">
-      <div class="day-header">
-        <div class="day-name">Pazartesi</div>
-        <div class="day-date">9 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Peynirli Dereotlu Poğaça</li>
-            <li>Beyaz Peynir – Zeytin</li>
-            <li>Reçel – Salatalık Çubukları</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Ev Yapımı Tarhana Çorba</li>
+            <li>Sebze Çorbası</li>
             <li>Yeşil Mercimek</li>
-            <li>Peynirli Erişte</li>
+            <li>Pirinç Pilavı</li>
             <li>Yoğurt</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
           <ul class="meal-items">
-            <li>Crumble Kek </li>
+            <li>Tarçınlı Havuç Kek</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="day-card" id="day-20260210">
+    <div class="day-card" id="day-20260303">
       <div class="day-header">
         <div class="day-name">Salı</div>
-        <div class="day-date">10 Şubat</div>
+        <div class="day-date">3 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
@@ -447,17 +291,17 @@
           <ul class="meal-items">
             <li>Süt</li>
             <li>Haşlanmış Yumurta</li>
-            <li>Beyaz Peynir – Zeytin</li>
-            <li>Bal – Havuç Çubukları</li>
+            <li>Çeçil Peynir – Zeytin</li>
+            <li>Reçel – Havuç Çubukları</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğle Yemeği</div>
           <ul class="meal-items">
-            <li>Tavuksuyu Çorba</li>
-            <li>Sebze Mercimek</li>
-            <li>Mantarlı Ispanak Sote</li>
-            <li>Yoğurtlu Kereviz Salatası</li>
+            <li>Şehriye Çorba</li>
+            <li>Arnavut Tavuğu</li>
+            <li>Bulgur Pilavı</li>
+            <li>Nuraniye</li>
           </ul>
         </div>
         <div class="meal-section">
@@ -470,75 +314,147 @@
       </div>
     </div>
 
-    <div class="day-card" id="day-20260211">
+    <div class="day-card" id="day-20260304">
       <div class="day-header">
         <div class="day-name">Çarşamba</div>
-        <div class="day-date">11 Şubat</div>
+        <div class="day-date">4 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-kahvalti">Kahvaltı</div>
           <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Pankek</li>
-            <li>Çeçil Peynir – Zeytin</li>
-            <li>Ev Yapımı Reçel – Salatalık</li>
+            <li>Portakal Suyu</li>
+            <li>Simit – Reçel</li>
+            <li>Üçgen Peynir – Zeytin</li>
+            <li>Havuç – Maydanoz – Dereotu – Kıvırcık</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Mercimek Çorba</li>
+            <li>Kabak Dolma</li>
+            <li>Parmesanlı Makarna</li>
+            <li>Mevsim Meyve</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Peynirli Çörekotlu Kurabiye</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260305">
+      <div class="day-header">
+        <div class="day-name">Perşembe</div>
+        <div class="day-date">5 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Süt</li>
+            <li>Patatesli Yumurta</li>
+            <li>Beyaz Peynir – Zeytin</li>
+            <li>Bal – Tatlı Kıl &amp; Kapya Biber</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğle Yemeği</div>
           <ul class="meal-items">
             <li>Ezogelin Çorba</li>
-            <li>Tavuk Dolma</li>
-            <li>Pirinç Pilavı</li>
-            <li>Balkabağı Tatlısı</li>
+            <li>Pizza – Soğan Halkası</li>
+            <li>Yoğurtlu Makarna Salatası</li>
+            <li>Limonata</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
           <ul class="meal-items">
-            <li>İspanaklı Labneli Poğaça</li>
+            <li>Mevsim Meyve</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="day-card" id="day-20260212">
+    <div class="day-card" id="day-20260306">
       <div class="day-header">
-        <div class="day-name">Perşembe</div>
-        <div class="day-date">12 Şubat</div>
+        <div class="day-name">Cuma</div>
+        <div class="day-date">6 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı (Ege)</div>
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
           <ul class="meal-items">
-            <li>Portakal Suyu – Simit</li>
-            <li>Soğuk Salata – Zeytin – Domates</li>
+            <li>Bitki Çayı</li>
+            <li>Scrambled Egg</li>
+            <li>Peynir Salatası – Zeytin</li>
+            <li>Reçel – Tereyağ</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğle Yemeği</div>
           <ul class="meal-items">
-            <li>Yoğurt Çorbası</li>
-            <li>Patates Musakka</li>
-            <li>Makarna</li>
-            <li>Komposto</li>
+            <li>Domates Çorba</li>
+            <li>Pilav Üstü Et Döner</li>
+            <li>Fırın Patates</li>
+            <li>Ayran</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
           <ul class="meal-items">
-            <li>Giresun Fındığı – Kuru Üzüm</li>
+            <li>Tahinli Ay Kurabiye</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="day-card" id="day-20260213">
+  </div><!-- /hafta1 -->
+
+  <!-- Hafta 2 -->
+  <div id="ipek-week-2" class="week-grid">
+
+    <div class="day-card" id="day-20260309">
       <div class="day-header">
-        <div class="day-name">Cuma</div>
-        <div class="day-date">13 Şubat</div>
-        <span class="special-badge">Sokak Lezzetleri Günü</span>
+        <div class="day-name">Pazartesi</div>
+        <div class="day-date">9 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Bitki Çayı</li>
+            <li>Peynirli Poğaça</li>
+            <li>Labne Peynir – Zeytin</li>
+            <li>Reçel – Salatalık Çubukları</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Mercimek Çorba</li>
+            <li>Kaşar Peynir Graten</li>
+            <li>Spagetti Makarna</li>
+            <li>Yoğurt</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Hindistan Cevizli Kakaolu Top</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260310">
+      <div class="day-header">
+        <div class="day-name">Salı</div>
+        <div class="day-date">10 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
@@ -546,23 +462,121 @@
           <ul class="meal-items">
             <li>Süt</li>
             <li>Çırpılmış Yumurta</li>
-            <li>Kaşar Peynir – Zeytin</li>
-            <li>Tahin Pekmez – Mini Pizza</li>
+            <li>Dil Peynir – Zeytin</li>
+            <li>Tahin Pekmez – Havuç Çubukları</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğle Yemeği</div>
           <ul class="meal-items">
-            <li>Anadolu Çorbası</li>
-            <li>Tavuklu Normanlı Pilav</li>
-            <li>Şekerpare</li>
+            <li>Toyga Çorba</li>
+            <li>İzmir Köfte</li>
+            <li>Arpa Şehriye Pilavı</li>
             <li>Ayran</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
           <ul class="meal-items">
-            <li>Kalpli Kurabiye</li>
+            <li>Damla Çikolatalı Kurabiye</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260311">
+      <div class="day-header">
+        <div class="day-name">Çarşamba</div>
+        <div class="day-date">11 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Portakal Suyu</li>
+            <li>Börek</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Tarhana Çorba</li>
+            <li>Nohut Yemeği</li>
+            <li>Pirinç Pilavı</li>
+            <li>Karışık Turşu</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Crumble Kek</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260312">
+      <div class="day-header">
+        <div class="day-name">Perşembe</div>
+        <div class="day-date">12 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Süt</li>
+            <li>Simit</li>
+            <li>Üçgen Peynir – Zeytin</li>
+            <li>Bal – Yeşillik Elçikoğe Söğüş</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Yayla Çorbası</li>
+            <li>Fırında Kıymalı Patates</li>
+            <li>Sebzeli Bulgur Pilavı</li>
+            <li>Komposto</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Mevsim Meyve</li>
+            <li>Grissini</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260313">
+      <div class="day-header">
+        <div class="day-name">Cuma</div>
+        <div class="day-date">13 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Bitki Çayı</li>
+            <li>Haşlanmış Yumurta</li>
+            <li>Beyaz Peynir – Zeytin</li>
+            <li>Reçel – Maydanoz Dereotu</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Ezogelin Çorba</li>
+            <li>Hamburger</li>
+            <li>Amerikan Salatası</li>
+            <li>Ayran</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Coğrafi İşaretli Giresun Tombul Fındığı</li>
           </ul>
         </div>
       </div>
@@ -573,17 +587,186 @@
   <!-- Hafta 3 -->
   <div id="ipek-week-3" class="week-grid">
 
-    <div class="day-card" id="day-20260216">
+    <div class="tatil-card">Ara Tatil – 16, 17, 18 Mart (Pazartesi–Çarşamba)</div>
+    <div class="tatil-card">Ramazan Bayramı – 19, 20 Mart (Perşembe–Cuma)</div>
+
+  </div><!-- /hafta3 -->
+
+  <!-- Hafta 4 -->
+  <div id="ipek-week-4" class="week-grid">
+
+    <div class="day-card" id="day-20260323">
       <div class="day-header">
         <div class="day-name">Pazartesi</div>
-        <div class="day-date">16 Şubat</div>
+        <div class="day-date">23 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-kahvalti">Kahvaltı</div>
           <ul class="meal-items">
             <li>Bitki Çayı</li>
-            <li>Açma</li>
+            <li>Çırpılmış Yumurta</li>
+            <li>Kaşar Peynir – Zeytin</li>
+            <li>Tahin Pekmez – Açma</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Mantı</li>
+            <li>Tempura Kabak – Havuç</li>
+            <li>Yoğurt</li>
+            <li>Mevsim Meyve</li>
+            <li>Grissini</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260324">
+      <div class="day-header">
+        <div class="day-name">Salı</div>
+        <div class="day-date">24 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Süt</li>
+            <li>Kekikli Ponçik</li>
+            <li>Söğüş Peynir – Zeytin</li>
+            <li>Havuç Dilimleri – Bal</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Kış Çorbası</li>
+            <li>Balık Ekmek</li>
+            <li>Turşu ve Suyu</li>
+            <li>Sıcak Helva</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Elmalı Çıtır Milföy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260325">
+      <div class="day-header">
+        <div class="day-name">Çarşamba</div>
+        <div class="day-date">25 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Pişi</li>
+            <li>Beyaz Peynir – Zeytin</li>
+            <li>Reçel – Tereyağ</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Alaca Çorba</li>
+            <li>Kuru Fasulye</li>
+            <li>Pirinç Pilavı</li>
+            <li>Komposto</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Çıtır Susamlı Kurabiye</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260326">
+      <div class="day-header">
+        <div class="day-name">Perşembe</div>
+        <div class="day-date">26 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Süt</li>
+            <li>Karaköy Poğaçası</li>
+            <li>Çeçil Peynir – Zeytin Salatası</li>
+            <li>Tahin Pekmez – Tereyağ</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Mercimek Çorba</li>
+            <li>Hindi Tandır</li>
+            <li>İç Pilav</li>
+            <li>Ayran</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Bisküvi Tatlısı</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card" id="day-20260327">
+      <div class="day-header">
+        <div class="day-name">Cuma</div>
+        <div class="day-date">27 Mart</div>
+        <span class="special-badge">Sürpriz Menü</span>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Bitki Çayı</li>
+            <li>Haşlanmış Yumurta</li>
+            <li>Dil Peyniri – Zeytin</li>
+            <li>Yeşillik – Bal</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğle Yemeği</div>
+          <ul class="meal-items">
+            <li>Sürpriz Menü</li>
+          </ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items">
+            <li>Muz</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hafta4 -->
+
+  <!-- Hafta 5 -->
+  <div id="ipek-week-5" class="week-grid">
+
+    <div class="day-card" id="day-20260330">
+      <div class="day-header">
+        <div class="day-name">Pazartesi</div>
+        <div class="day-date">30 Mart</div>
+      </div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-kahvalti">Kahvaltı</div>
+          <ul class="meal-items">
+            <li>Bitki Çayı</li>
             <li>Krem Peynir – Zeytin</li>
             <li>Havuç Çubukları – Bal</li>
           </ul>
@@ -600,315 +783,47 @@
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
           <ul class="meal-items">
-            <li>Alaca Kek</li>
+            <li>Mevsim Meyve</li>
+            <li>Grissini</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="day-card" id="day-20260217">
+    <div class="day-card" id="day-20260331">
       <div class="day-header">
         <div class="day-name">Salı</div>
-        <div class="day-date">17 Şubat</div>
+        <div class="day-date">31 Mart</div>
       </div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-kahvalti">Kahvaltı</div>
           <ul class="meal-items">
             <li>Süt</li>
-            <li>Haşlanmış Yumurta</li>
-            <li>Beyaz Peynir – Zeytin</li>
-            <li>Reçel – Tereyağ</li>
+            <li>Peynirli Yumurta</li>
+            <li>Söğüş Salata – Zeytin</li>
+            <li>Fındık – Tahin Pekmez</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğle Yemeği</div>
           <ul class="meal-items">
-            <li>Havuç Çorba</li>
-            <li>Kadınbudu Köfte + Püre</li>
-            <li>Napoliten Soslu Makarna</li>
-            <li>Ayran</li>
+            <li>Şehriye Çorbası</li>
+            <li>Baget</li>
+            <li>Kuskus</li>
+            <li>İspanak Tarator</li>
           </ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
           <ul class="meal-items">
-            <li>Mevsim Meyve</li>
+            <li>Islak Kek</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="day-card" id="day-20260218">
-      <div class="day-header">
-        <div class="day-name">Çarşamba</div>
-        <div class="day-date">18 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Pişi</li>
-            <li>Kaşar Peynir – Zeytin Salatası</li>
-            <li>Havuç Çubukları – Bal</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Tavuk Suyu Çorba</li>
-            <li>Gemici Usulü Balık</li>
-            <li>Pirinç Pilavı</li>
-            <li>Karışık Turşu</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Muzlu Süt</li>
-            <li>Susamlı Yağlı Gevrek</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260219">
-      <div class="day-header">
-        <div class="day-name">Perşembe</div>
-        <div class="day-date">19 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Portakal Suyu</li>
-            <li>Patatesli Yumurta</li>
-            <li>Üçgen Peynir – Zeytin</li>
-            <li>Bal – Tereyağ</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Yoğurtlu Toprak Çorba</li>
-            <li>Ankara Tava</li>
-            <li>Zeytinyağlı Fasulye</li>
-            <li>Yalancı Tavuk Göğüsü</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Sakallı</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260220">
-      <div class="day-header">
-        <div class="day-name">Cuma</div>
-        <div class="day-date">20 Şubat</div>
-        <span class="special-badge">Smiling Face Breakfast</span>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Süt – Portakal Dilimi</li>
-            <li>Omlet</li>
-            <li>Havuç Çubuğu – Salatalık Dilimi</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Domates Çorba</li>
-            <li>Fish Finger &amp; Patates Kavurması</li>
-            <li>Makarna</li>
-            <li>Limonata</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Mevsim Meyve</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /hafta3 -->
-
-  <!-- Hafta 4 -->
-  <div id="ipek-week-4" class="week-grid">
-
-    <div class="day-card" id="day-20260223">
-      <div class="day-header">
-        <div class="day-name">Pazartesi</div>
-        <div class="day-date">23 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Süt</li>
-            <li>Haşlanmış Yumurta</li>
-            <li>Kaşar Peynir – Zeytin</li>
-            <li>Yeşillik Salatası</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Sebze Çorba</li>
-            <li>Kuru Fasulye</li>
-            <li>Pirinç Pilavı</li>
-            <li>Cacık</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Beyaz Çikolatalı Donut</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260224">
-      <div class="day-header">
-        <div class="day-name">Salı</div>
-        <div class="day-date">24 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Karamelli Poğaça</li>
-            <li>Krem Peynir – Zeytin</li>
-            <li>Tahin Pekmez – Salatalık Çubukları</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Fırın Beğendi &amp; Patates Sote</li>
-            <li>Erişte</li>
-            <li>Salata</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Toyga Çorba</li>
-            <li>Mevsim Meyve</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260225">
-      <div class="day-header">
-        <div class="day-name">Çarşamba</div>
-        <div class="day-date">25 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Portakal Suyu</li>
-            <li>Çeçil Peynir – Zeytin</li>
-            <li>Havuç Çubukları – Bal</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Ezogelin Çorba</li>
-            <li>Karnabahar Yemeği</li>
-            <li>Patatesli Gül Böreği</li>
-            <li>Yoğurt</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Elmalı Tart</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260226">
-      <div class="day-header">
-        <div class="day-name">Perşembe</div>
-        <div class="day-date">26 Şubat</div>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Süt</li>
-            <li>Beyaz Peynir – Zeytin</li>
-            <li>Reçel – Maydanoz &amp; Dereotu</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Karışık Dolma</li>
-            <li>Makarna</li>
-            <li>Yoğurt</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Meyveli Kek (Rikweta)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card" id="day-20260227">
-      <div class="day-header">
-        <div class="day-name">Cuma</div>
-        <div class="day-date">27 Şubat</div>
-        <span class="special-badge">Meksika Günü 🌮</span>
-      </div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-kahvalti">Kahvaltı</div>
-          <ul class="meal-items">
-            <li>Bitki Çayı</li>
-            <li>Omlet</li>
-            <li>Kaşar Peynir – Zeytin</li>
-            <li>Bal – Tatlı Kırmızı Kapya Biber</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğle Yemeği</div>
-          <ul class="meal-items">
-            <li>Taco</li>
-            <li>Meksika Fasulyeli Pilav</li>
-            <li>Churros</li>
-          </ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items">
-            <li>Mevsim Meyve</li>
-            <li>Grisini</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /hafta4 -->
+  </div><!-- /hafta5 -->
 
   <!-- Alerjen Açıklamaları -->
   <div class="legend">
@@ -935,29 +850,48 @@
 
 <!-- ===== MERT ===== -->
 <div id="tab-mert" class="tab-content">
-  <div class="school-label">Özel İlk Gelişim Anaokulu · Şubat 2026</div>
+  <div class="school-label">Özel İlk Gelişim Anaokulu · Mart 2026</div>
 
   <div class="week-nav">
     <span>Hafta:</span>
-    <button class="week-btn active" onclick="switchWeek('mert', 1, this)">2–6 Şubat</button>
-    <button class="week-btn" onclick="switchWeek('mert', 2, this)">9–13 Şubat</button>
-    <button class="week-btn" onclick="switchWeek('mert', 3, this)">16–20 Şubat</button>
-    <button class="week-btn" onclick="switchWeek('mert', 4, this)">23–27 Şubat</button>
+    <button class="week-btn active" onclick="switchWeek('mert', 1, this)">2–6 Mart</button>
+    <button class="week-btn" onclick="switchWeek('mert', 2, this)">9–13 Mart</button>
+    <button class="week-btn" onclick="switchWeek('mert', 3, this)">16–20 Mart</button>
+    <button class="week-btn" onclick="switchWeek('mert', 4, this)">23–27 Mart</button>
+    <button class="week-btn" onclick="switchWeek('mert', 5, this)">30–31 Mart</button>
   </div>
 
   <!-- Hafta 1 -->
   <div id="mert-week-1" class="week-grid active">
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">2 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">2 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li><li>Mevsim Çayı</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li><li>Mevsim Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Mercimek</li><li>Pilav</li><li>Turşu</li></ul>
+          <ul class="meal-items"><li>Havuç Çorbası</li><li>Bolonez Soslu Pilav</li><li>Spagetti</li><li>Salata</li><li>Yoğurt</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items"><li>Puding</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">3 Mart</div></div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-sabah">Sabah</div>
+          <ul class="meal-items"><li>Açma</li><li>Karışık Kahvaltı</li><li>Mevsim Çayı</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğlen</div>
+          <ul class="meal-items"><li>Mercimek</li><li>Pilav</li><li>Salata</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
@@ -967,43 +901,25 @@
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">3 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">4 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kanepe</li><li>Havuç</li><li>Elma Çayı</li></ul>
+          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Sebze Çorbası</li><li>Spagetti</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Prasa</li><li>Makarna</li><li>Yoğurt</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Mozaik Pasta</li></ul>
+          <ul class="meal-items"><li>Susamlı Kurabiye</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">4 Şubat</div></div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Omlet</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Nohut</li><li>Pilav</li><li>Turşu</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Pişi</li></ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card">
-      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">5 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">5 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
@@ -1011,25 +927,25 @@
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Ekşili Köfte</li><li>Yüzük Makarna</li><li>Salata</li></ul>
+          <ul class="meal-items"><li>Nohut</li><li>Pilav</li><li>Turşu</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Kurabiye</li></ul>
+          <ul class="meal-items"><li>Havuçlu Kek</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">6 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">6 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Yumurta</li><li>Üzüm Suyu</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Brokoli Çorbası</li><li>Börek</li><li>Ayran</li></ul>
+          <ul class="meal-items"><li>Sulu Köfte</li><li>Şehriye</li><li>Salata</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
@@ -1044,47 +960,47 @@
   <div id="mert-week-2" class="week-grid">
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">9 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">9 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li><li>Bitki Çayı</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li><li>Bitki Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Sebze Çorbası</li><li>Spagetti</li><li>Salata</li></ul>
+          <ul class="meal-items"><li>Mercimek</li><li>Pilav</li><li>Salata</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Islak Kek</li></ul>
+          <ul class="meal-items"><li>Üzümlü Kek</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">10 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">10 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Fırında Peynirli Ekmek</li><li>Havuç</li><li>Ihlamur</li></ul>
+          <ul class="meal-items"><li>Karışık Kanepe</li><li>Havuç</li><li>Mevsim Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Karnıbahar</li><li>Kuskus</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Pazı</li><li>Makarna</li><li>Yoğurt</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Açma</li></ul>
+          <ul class="meal-items"><li>Çıtır Çubuklar</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">11 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">11 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Omlet</li></ul>
+          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
@@ -1092,13 +1008,13 @@
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>İrmik Helvası</li></ul>
+          <ul class="meal-items"><li>Fındıklı Kurabiye</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">12 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">12 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
@@ -1110,21 +1026,21 @@
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Susamlı Çubuklar</li></ul>
+          <ul class="meal-items"><li>Pişi</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">13 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">13 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Yumurta</li><li>Elma Suyu</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Fırın Köfte</li><li>Pilav</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Fırın Köfte</li><li>Erişte</li><li>Salata</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
@@ -1139,33 +1055,51 @@
   <div id="mert-week-3" class="week-grid">
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">16 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">16 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li><li>Mevsim Çayı</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li><li>Mevsim Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Havuç Çorbası</li><li>Mantı</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Sebze Çorbası</li><li>Mantı</li><li>Yoğurt</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Puding</li></ul>
+          <ul class="meal-items"><li>Portakallı Muhalebi</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">17 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">17 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Açma</li><li>Karışık Kahvaltı</li><li>Üzüm Suyu</li></ul>
+          <ul class="meal-items"><li>Peynirli Poğaça</li><li>Havuç</li><li>Elma Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Ispanak</li><li>Erişte</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Ispanak</li><li>Makarna</li><li>Yoğurt</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items"><li>Tarçınlı Kurabiye</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">18 Mart</div></div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-sabah">Sabah</div>
+          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğlen</div>
+          <ul class="meal-items"><li>Sebze Çorbası</li><li>Karışık Börek</li><li>Ayran</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
@@ -1174,59 +1108,7 @@
       </div>
     </div>
 
-    <div class="day-card">
-      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">18 Şubat</div></div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Omlet</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Nohut</li><li>Pilav</li><li>Salata</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Elmalı Kurabiye</li></ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card">
-      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">19 Şubat</div></div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Kış Çorbası</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Sulu Köfte</li><li>Makarna</li><li>Salata</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Tuzlu Kurabiye</li></ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card">
-      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">20 Şubat</div></div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Yumurta</li><li>Meyve Çayı</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Sebze Çorbası</li><li>Patates Oturtma</li><li>Salata</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Meyve</li></ul>
-        </div>
-      </div>
-    </div>
+    <div class="tatil-card">Ramazan Bayramı – 19, 20 Mart (Perşembe–Cuma)</div>
 
   </div><!-- /mert-hafta3 -->
 
@@ -1234,33 +1116,15 @@
   <div id="mert-week-4" class="week-grid">
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">23 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">23 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li><li>Bitki Çayı</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li><li>Bitki Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Kereviz Çorbası</li><li>Kıymalı Gül Böreği</li><li>Ayran</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Mozaik Pasta</li></ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="day-card">
-      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">24 Şubat</div></div>
-      <div class="meal-sections">
-        <div class="meal-section">
-          <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Simit</li><li>Havuç</li><li>Meyve Çayı</li></ul>
-        </div>
-        <div class="meal-section">
-          <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Pazı</li><li>Makarna</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Mercimek</li><li>Bulgur Pilavı</li><li>Salata</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
@@ -1270,25 +1134,43 @@
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">25 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">24 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Omlet</li></ul>
+          <ul class="meal-items"><li>Karışık Kanepe</li><li>Havuç</li><li>Mevsim Çayı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>İzmir Köfte</li><li>Bulgur Pilavı</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Sebze Çorbası</li><li>Börek</li><li>Ayran</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Havuçlu Kek</li></ul>
+          <ul class="meal-items"><li>Mozaik Pasta</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">26 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Çarşamba</div><div class="day-date">25 Mart</div></div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-sabah">Sabah</div>
+          <ul class="meal-items"><li>Yumurta</li><li>Karışık Kahvaltı</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğlen</div>
+          <ul class="meal-items"><li>Kuru Fasulye</li><li>Pilav</li><li>Turşu</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items"><li>Susamlı Kurabiye</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header"><div class="day-name">Perşembe</div><div class="day-date">26 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
@@ -1296,25 +1178,25 @@
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Mercimek</li><li>Pilav</li><li>Turşu</li></ul>
+          <ul class="meal-items"><li>Fırın Köfte</li><li>Patates</li><li>Bulgur Pilavı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
-          <ul class="meal-items"><li>Poğaça</li></ul>
+          <ul class="meal-items"><li>Ay Çöreği</li></ul>
         </div>
       </div>
     </div>
 
     <div class="day-card">
-      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">27 Şubat</div></div>
+      <div class="day-header"><div class="day-name">Cuma</div><div class="day-date">27 Mart</div></div>
       <div class="meal-sections">
         <div class="meal-section">
           <div class="meal-type type-sabah">Sabah</div>
-          <ul class="meal-items"><li>Karışık Kahvaltı</li><li>Yumurta</li><li>Çocuk Çayı</li></ul>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ogle">Öğlen</div>
-          <ul class="meal-items"><li>Kapuska</li><li>Bulgur Pilavı</li><li>Yoğurt</li></ul>
+          <ul class="meal-items"><li>Tarhana Çorbası</li><li>Mantı</li><li>Yoğurt</li></ul>
         </div>
         <div class="meal-section">
           <div class="meal-type type-ikindi">İkindi</div>
@@ -1324,6 +1206,47 @@
     </div>
 
   </div><!-- /mert-hafta4 -->
+
+  <!-- Hafta 5 -->
+  <div id="mert-week-5" class="week-grid">
+
+    <div class="day-card">
+      <div class="day-header"><div class="day-name">Pazartesi</div><div class="day-date">30 Mart</div></div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-sabah">Sabah</div>
+          <ul class="meal-items"><li>Omlet</li><li>Karışık Kahvaltı</li><li>Bitki Çayı</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğlen</div>
+          <ul class="meal-items"><li>Brokoli Çorbası</li><li>Kıymalı Fiyonk Makarna</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items"><li>Puding</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-header"><div class="day-name">Salı</div><div class="day-date">31 Mart</div></div>
+      <div class="meal-sections">
+        <div class="meal-section">
+          <div class="meal-type type-sabah">Sabah</div>
+          <ul class="meal-items"><li>Simit</li><li>Karışık Kahvaltı</li><li>Mevsim Çayı</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ogle">Öğlen</div>
+          <ul class="meal-items"><li>Ekşili Köfte</li><li>Yüzük Makarna</li><li>Yoğurt</li></ul>
+        </div>
+        <div class="meal-section">
+          <div class="meal-type type-ikindi">İkindi</div>
+          <ul class="meal-items"><li>Cevizli Kek</li></ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /mert-hafta5 -->
 
   <div class="legend">
     <h3>Not</h3>
@@ -1372,7 +1295,8 @@
     let week = 1;
     if (dayNum >= 9 && dayNum <= 13) week = 2;
     else if (dayNum >= 16 && dayNum <= 20) week = 3;
-    else if (dayNum >= 23) week = 4;
+    else if (dayNum >= 23 && dayNum <= 27) week = 4;
+    else if (dayNum >= 30) week = 5;
 
     const weekEl = document.getElementById('ipek-week-' + week);
     if (weekEl) {
